@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic';
+import Topbar from './components/topbar';
 
 const MapComponentWithNoSSR = dynamic(() => import('./components/mapcomponent'), {
   ssr: false,
@@ -6,8 +7,11 @@ const MapComponentWithNoSSR = dynamic(() => import('./components/mapcomponent'),
 
 export default function Home() {
   return (
-    <main className="h-[300px]">
-      <MapComponentWithNoSSR />
-    </main>
+    <>
+      <Topbar />
+      <main className="h-[450px] w-[1440px] mx-auto">
+        <MapComponentWithNoSSR />
+      </main>
+    </>
   );
 }
