@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <div className={inter.className}>
+      <nav className="rounded-lg border border-gray-400 p-4 bg-gray-200">
+        <Link href="/">Home</Link> | <Link href="/newpage">New Page</Link>
+      </nav>
+
+      <main>{children}</main>
+    </div>
   );
 }
