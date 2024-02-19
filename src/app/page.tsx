@@ -3,6 +3,7 @@ import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import Topbar from './components/topbar';
 
+
 const MapComponentWithNoSSR = dynamic(() => import('./components/mapcomponent'), {
   ssr: false,
 });
