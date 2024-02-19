@@ -19,7 +19,9 @@ export default function Home() {
     <>
       <Topbar />
       <main className="w-[1440px] mx-auto" style={{ height: `${mapHeight}px`, transition: 'height 0.5s ease' }}>
-        <MapComponentWithNoSSR />
+        
+          <MapComponentWithNoSSR />
+        
         <button onClick={toggleMapHeight} className="mt-4">
           {mapHeight === 350 ? 'Minimize Map' : 'Expand Map'}
         </button>

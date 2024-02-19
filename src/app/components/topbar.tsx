@@ -8,7 +8,7 @@ const Topbar = () => {
         <div className="ml-2 font-bold text-4xl">ArchiDesk</div>
       </div>
       <div>
-        login
+        Login
       </div>
     </nav>
   );
