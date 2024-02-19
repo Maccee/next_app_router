@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Topbar />
-      <main className="w-[1440px] mx-auto" style={{ height: `${mapHeight}px`, transition: 'height 0.5s ease' }}>
+      <main className="max-w-6xl mx-auto" style={{ height: `${mapHeight}px`, transition: 'height 0.5s ease' }}>
         
           <MapComponentWithNoSSR />
         

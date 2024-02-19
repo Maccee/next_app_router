@@ -20,7 +20,7 @@ import {
 const Mapa = () => {
   const defaultPosition: [number, number] = [60.1710, 24.9413];
   return (
-    <MapContainer center={defaultPosition} zoom={13} scrollWheelZoom={true} zoomControl={false} style={{ height: '100%', width: '100%', zIndex: '0' }}>
+    <MapContainer center={defaultPosition} zoom={13} scrollWheelZoom={true} zoomControl={false} style={{ height: '100%', width: '100%'}}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="http://tiles.hel.ninja/styles/hel-osm-bright/{z}/{x}/{y}@2x@fi.png"
