@@ -18,14 +18,20 @@ export default function Home() {
 
   return (
     <>
-      <Topbar />
+      <div className='shadow-lg'>
+        <Topbar />
+      </div>
       <main className="max-w-6xl mx-auto" style={{ height: `${mapHeight}px`, transition: 'height 0.5s ease' }}>
-        
-          <MapComponentWithNoSSR />
-        
-        <button onClick={toggleMapHeight} className="mt-4">
+      <button onClick={toggleMapHeight} className="mt-4">
           {mapHeight === 350 ? 'Minimize Map' : 'Expand Map'}
         </button>
+          <MapComponentWithNoSSR />
+        
+        
+        <div>
+          Search
+        </div>
+        <div>cards</div>
       </main>
     </>
   );
