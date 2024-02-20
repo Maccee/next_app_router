@@ -16,7 +16,7 @@ const SearchInput = () => {
       }
     };
     return (
-        <div className="flex flex-grow items-center border-2 p-1 rounded-full min-w-0">
+        <div className="flex flex-grow items-center border-2 p-1 rounded-full min-w-0 bg-white">
         <input
           className="flex-grow bg-transparent outline-none min-w-0"
           type="text"
