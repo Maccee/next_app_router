@@ -10,11 +10,11 @@ const MapComponentWithNoSSR = dynamic(() => import('./components/Mapcomponent'),
 
 
 export default function Home() {
-  const [mapHeight, setMapHeight] = useState(350); // Map height
+  const [mapHeight, setMapHeight] = useState(300); // Map height
 
   // Toggle map height
   const toggleMapHeight = () => {
-    setMapHeight(mapHeight === 350 ? 0 : 350);
+    setMapHeight(mapHeight === 300 ? 0 : 300);
   };
 
 
@@ -31,11 +31,13 @@ export default function Home() {
           <MapComponentWithNoSSR />
         </div>
 
-        <div className='max-w-6xl mx-auto flex justify-center flex-col gap-2'>
+        <div className='max-w-xl mx-auto flex justify-center flex-col'>
           <button onClick={toggleMapHeight} className="mt-2">
             {mapHeight === 350 ? 'Minimize Map' : 'Expand Map'}
           </button>
-          <SearchInput />
+          <div className='w-100 flex justify-center'>
+            <SearchInput />
+          </div>
         </div>
 
       </div>

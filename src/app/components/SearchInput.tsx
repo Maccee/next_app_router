@@ -16,7 +16,7 @@ const SearchInput = () => {
       }
     };
     return (
-        <div className="flex flex-grow items-center border-2 p-1 rounded-full min-w-0 bg-white mb-2">
+        <div className="max-w-3xl flex flex-grow items-center border-2 p-2 rounded-full min-w-0 bg-white m-2">
         <input
           className="flex-grow bg-transparent outline-none min-w-0"
           type="text"
@@ -26,7 +26,7 @@ const SearchInput = () => {
           onKeyDown={handleKeyDown}
         />
         <MagnifyingGlassIcon
-          className="inline-flex h-8 w-8 bg-logoBlue text-white rounded-full p-2 cursor-pointer md:mx-2"
+          className="inline-flex h-10 w-10 bg-logoBlue text-white rounded-full p-2 cursor-pointer"
           onClick={handleSearch}
         />
       </div>
