@@ -36,7 +36,7 @@ export const ZoomControl = ({ showAlue, setShowAlue }) => {
       <button
         onClick={toggleAlue}
         className="text-xl w-12 h-12 bg-white text-white mb-1 rounded-full border-2 hover:bg-blue-700 transition duration-300 flex items-center justify-center shadow-black"
-        // Adjust top-[5rem] as needed to position below the ZoomControl
+      
       >
         {showAlue ? (
           <GlobeAltIcon className="h-6 text-logoBlue" />
