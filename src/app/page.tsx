@@ -31,8 +31,8 @@ export default function Home() {
           <MapComponentWithNoSSR />
         </div>
 
-        <div className='max-w-6xl mx-auto flex justify-center flex-column'>
-          <button onClick={toggleMapHeight} className="">
+        <div className='max-w-6xl mx-auto flex justify-center flex-col gap-2'>
+          <button onClick={toggleMapHeight} className="mt-2">
             {mapHeight === 350 ? 'Minimize Map' : 'Expand Map'}
           </button>
           <SearchInput />
