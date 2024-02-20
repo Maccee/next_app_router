@@ -7,7 +7,7 @@ import SearchInput from './components/SearchInput';
 
 
 
-const MapComponentWithNoSSR = dynamic(() => import('./components/mapcomponent'), {
+const MapComponentWithNoSSR = dynamic(() => import('./components/Mapcomponent'), {
   ssr: false,
 });
 
@@ -23,17 +23,20 @@ export default function Home() {
 
   return (
     <>
-      <div className='shadow-lg'>
+      <div className='shadow-lg z-50'>
         <Topbar />
       </div>
 
-      <main className="max-w-6xl mx-auto" style={{ height: `${mapHeight}px`, transition: 'height 0.5s ease' }}>
+      <main className="max-w-6xl mx-auto" >
 
+        
+
+        <div style={{ height: `${mapHeight}px`, transition: 'height 0.5s ease'}}>
+          <MapComponentWithNoSSR />
+        </div>
         <button onClick={toggleMapHeight} className="mt-4">
           {mapHeight === 350 ? 'Minimize Map' : 'Expand Map'}
         </button>
-
-        <MapComponentWithNoSSR />
         <SearchInput />
 
         <div>
